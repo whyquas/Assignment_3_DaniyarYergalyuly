@@ -20,6 +20,16 @@ public class Main {
         bst.put(10, "ten");
         bst.put(5, "five");
         bst.put(15, "fifteen");
+        bst.put(3, "three");
+        bst.put(7, "seven");
+
+        for (var elem : bst) {
+            System.out.println("key is " + elem.getKey() + " and value is " + elem.getValue());
+        }
+
+        System.out.println("Size before deletion: " + bst.size());
+        bst.delete(5);
+        System.out.println("Size after deletion: " + bst.size());
 
         for (var elem : bst) {
             System.out.println("key is " + elem.getKey() + " and value is " + elem.getValue());
